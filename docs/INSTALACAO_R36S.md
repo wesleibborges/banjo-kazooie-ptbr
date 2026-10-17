@@ -51,7 +51,13 @@ Formato: `.z64` (big-endian, magic `80 37 12 40`).
 `.n64` (byte-swapped) e `.v64` precisam ser convertidos — veja
 `adaptar_ports_br.py` (`n64_para_z64`).
 
-Verificação rápida do hash:
+Verificação do hash — **dois caminhos**:
+
+**Online (recomendado):** <https://wesleibborges.github.io/banjo-kazooie-ptbr/>
+Arraste a ROM; a página calcula o SHA-1 localmente (nada é enviado), detecta
+`.z64`/`.n64`/`.v64` e diz se a revisão é aceita.
+
+**Local:**
 
 ```bash
 sha1sum "Banjo-Kazooie (U) (V1.1).z64"

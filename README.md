@@ -9,6 +9,28 @@ Port **Lighthouse** (HarbourMasters) de **Banjo-Kazooie** para handhelds ARM
 
 ---
 
+## 🔍 Verificador de ROM (online)
+
+Ferramenta no navegador para conferir se a sua ROM é aceita pelo port, **sem
+enviar o arquivo a nenhum servidor** (SHA-1 calculado localmente via Web Crypto).
+
+➡️ **https://wesleibborges.github.io/banjo-kazooie-ptbr/**
+
+O que ela faz:
+
+- arraste a ROM (`.z64`, `.n64` ou `.v64`) e receba o veredito na hora;
+- detecta o formato e converte byte-swap/word-swap **só para conferir o hash**;
+- mostra título, game code, revisão e os dois SHA-1 (arquivo e `.z64`);
+- aponta o motivo quando não passa (ROM traduzida, formato trocado, tamanho errado).
+
+Código: [`docs/index.html`](docs/index.html) — funciona offline também (abra o
+arquivo direto no navegador).
+
+Testes executados: US v1.1 ✅ compatível · ROM traduzida PAL ❌ recusada ·
+`.n64` byte-swapped ✅ reconhecida após conversão.
+
+---
+
 ## 📦 Conteúdo
 
 ```
