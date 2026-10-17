@@ -1,0 +1,29 @@
+# ROMs (nunca versionar)
+*.z64
+*.n64
+*.v64
+*.ndd
+
+# Assets extraidos da ROM base (o port regenera no 1o boot)
+port/lighthouse/bk.o2r
+
+# Estado de execucao / preferencias locais
+port/lighthouse/saves/
+port/lighthouse/logs/
+port/lighthouse/log.txt
+port/lighthouse/imgui.ini
+port/lighthouse/lighthouse.cfg.json
+
+# Temporarios
+__pycache__/
+*.pyc
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Credenciais
+*.pem
+*.ppk
+*.key
+.env
